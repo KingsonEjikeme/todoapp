@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .todo-container {
+        max-width: 500px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      li::marker {
+        color: white;
+      }
+      li {
+        margin-top: 5px;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script src="ToDo.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="d-flex ms-auto justify-content-center pt-5">
+    <div
+      class="container bg-dark p-5 bg-opacity-25 rounded-3 ms-auto todo-container"
+    >
+      <h3 class="text-center text-dark text-opacity-75">To-Do List</h3>
+
+      <span class="text-center d-flex justify-content-center gap-2">
+        <input type="text" class="input" placeholder="New task" id="input" />
+        <button onclick="saveInput()" class="btn bg-warning">Save</button>
+      </span>
+
+      <ul id="list-section" class=""></ul>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
